@@ -1,3 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*Hero*/
+.hero {
+    top: 0;
+    height: 100vh;
+    background-image: url(./image/3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.hero h1 {
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 70px;
+    z-index: 1;
+    top: 30px;
+}
+
 /*Loader*/
 .loader {
     position: fixed;
