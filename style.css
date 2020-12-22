@@ -14,7 +14,7 @@ body {
 .container {
     height: 100vh;
     width: 100%;
-    background-image: url(./image/3.png);
+    background-image: url(./image/nice.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -22,6 +22,8 @@ body {
 .content {
     width: 88%;
     margin: auto;
+    position: relative;
+    z-index: 2;
 }
 .content .logo {
     width: 100px;
@@ -33,20 +35,22 @@ body {
     height: 5px;
     max-width: 280px;
     margin-top: 8px;
-    background: #84b6f8;
+    background: #006eff;
 }
 .content h1 {
     font-size: 120px;
     font-weight: 100;
-    color: #cfcfcf;
+    color: #c5c3c3;
     margin-top: 50px;
     margin-bottom: 30px;
     letter-spacing: 1px;
     line-height: 120px;
 }
 .content h1 span {
-    color: #84b6f8;
+    color: #fff;
+    background-color: rgba(0, 129, 250, 0.616);
     font-size: 1.10em;
+    padding: 0 5px;
 }
 .content p {
     max-width: 450px;
@@ -73,12 +77,24 @@ body {
 }
 .content .btn2 {float: right;}
 .sidebar {
-    width: 30px;
+    width: 30%;
     max-width: 550px;
-    height: 100px;
+    height: 100%;
     background: rgba(0, 0, 0, 0.8);
     position: absolute;
     top: 0;
+    left: 0;
+    z-index: 1;
+    backdrop-filter: blur(6px);
+}
+
+/*Menu*/
+.menu {
+    width: 80px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
 }
 
 
