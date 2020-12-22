@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
     margin: 0;
     padding: 0;
@@ -7,23 +11,69 @@ body {
 
 
 /*Hero*/
-.hero {
-    top: 0;
+.container {
     height: 100vh;
+    width: 100%;
     background-image: url(./image/3.png);
-    background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
-    background-attachment: fixed;
+    background-position: center;
+    position: relative;
 }
-.hero h1 {
-    font-family: 'Times New Roman', Times, serif;
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: 70px;
-    z-index: 1;
-    top: 30px;
+.content {
+    width: 88%;
+    margin: auto;
 }
+.content .logo {
+    width: 100px;
+    margin-top: 50px;
+}
+.content hr {
+    left: 0;
+    border: none;
+    height: 5px;
+    max-width: 280px;
+    margin-top: 8px;
+    background: #84b6f8;
+}
+.content h1 {
+    font-size: 120px;
+    font-weight: 100;
+    color: #cfcfcf;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    line-height: 120px;
+}
+.content p {
+    max-width: 450px;
+    color: #919191;
+    letter-spacing: 1px;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*Loader*/
 .loader {
