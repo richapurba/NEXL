@@ -39,10 +39,14 @@ body {
     font-size: 120px;
     font-weight: 100;
     color: #cfcfcf;
-    margin-top: 60px;
+    margin-top: 50px;
     margin-bottom: 30px;
     letter-spacing: 1px;
     line-height: 120px;
+}
+.content h1 span {
+    color: #84b6f8;
+    font-size: 1.10em;
 }
 .content p {
     max-width: 450px;
@@ -51,9 +55,31 @@ body {
     line-height: 20px;
     font-size: 14px;
 }
-
-
-
+.content .btn {
+    text-decoration: none;
+    border: 1px solid #fff;
+    color: #fff;
+    letter-spacing: 1px;
+    padding: 18px 34px;
+    border-radius: 30px;
+    display: inline-block;
+    margin-top: 40px;
+}
+.content .btn:hover {
+    background: #84b6f8;
+    border-color: #84b6f8;
+    color: black;
+    transition: .5s;
+}
+.content .btn2 {float: right;}
+.sidebar {
+    width: 30px;
+    max-width: 550px;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+}
 
 
 
