@@ -142,7 +142,7 @@ body {
     text-align: center;
     text-decoration: none;
     transition: all 0.4s;
-    z-index: 2;
+    z-index: 3;
 }
 .menu a:hover,
 .menu a.active {
@@ -313,26 +313,10 @@ iframe {
 
 /*Responsive design*/
 
+/*Hero*/
+@media (max-width: 991px) {
 
-/*Contact form*/
-@media (max-width: 850px) {
-    .container-form {
-        grid-template-columns: 1fr;
-    }
-    .contact-form:before {
-        top: -13px;
-        left: initial;
-        right: 70px;
-    }
 }
-@media (max-width: 480px) {
-    .container-form {padding: 1.5rem;}
-    form {padding: 1.7rem 1.6rem;}
-    .title {font-size: 1.15rem;}
-    .input {padding: 0.45rem 1.2rem;}
-    .btn3 {padding: 0.45rem 1.2rem;}
-}
-
 
 
 /*Loader*/
@@ -343,7 +327,7 @@ iframe {
     background: #000000;
     height: 100%;
     width: 100%;
-    z-index: 3;
+    z-index: 1000;
     display: flex;
     justify-content: center;
     align-items: center;
