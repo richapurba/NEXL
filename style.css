@@ -170,10 +170,24 @@ h2 {
 .container-form {
     position: relative;
     width: 100%;
-    min-height: 100vh;
+    max-height: 100vh;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
+.form {
+    width: 100%;
+    max-width: 820px;
+    height: 500px;
+    background-color: rgba(0, 129, 250, 0.616);
+    border-radius: 10px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
 
 
 
