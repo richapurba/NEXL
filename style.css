@@ -188,7 +188,7 @@ h2 {
     grid-template-columns: repeat(2, 1fr);
 }
 .contact-form {
-    background-color: rgba(0, 129, 250, 0.616);
+    background-color: #84b6f8;
     position: relative;
 }
 form {
@@ -249,7 +249,7 @@ textarea.input {
     background-color: #fff;
     border: 2px solid #fafafa;
     font-size: 00.95rem;
-    color: rgba(0, 129, 250, 0.616);
+    color: #84b6f8;
     line-height: 1;
     border-radius: 25px;
     outline: none;
@@ -262,7 +262,42 @@ textarea.input {
     background-color: transparent;
     color: #fff;
 }
-
+.input-container span {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    transform: translateY(-50%);
+    font-size: 0.8rem;
+    padding: 0 0.4rem;
+    color: transparent;
+    pointer-events: none;
+    z-index: 1;
+}
+.input-container span:before,
+.input-container span:after {
+    content: "";
+    position: absolute;
+    width: 10%;
+    opacity: 0;
+    transition: 0.3s;
+    height: 5px;
+    background-color: #84b6f8;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.input-container span:before {left: 50%;}
+.input-container span:after {right: 50%;}
+.input-container.focus label {
+    top: 0;
+    transform: translateY(-50%);
+    left: 25px;
+    font-size: 0.8rem;
+}
+.input-container.focus span:before,
+.input-container.focus span:after {
+    width: 50%;
+    opacity: 1;
+}
 
 
 /*Loader*/
